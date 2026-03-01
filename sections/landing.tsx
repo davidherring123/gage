@@ -6,9 +6,11 @@ import { Typewriter } from '@/components/ui/typewriter';
 import { transition } from '@/const/animations';
 import { SECTION_IDS } from '@/const/sections';
 import { useTimeline } from '@/hooks/use-timeline';
+import { useScrollLock } from '@/hooks/use-scroll-lock';
 
 export function Landing() {
   const timeline = useTimeline();
+  useScrollLock(3.6);
 
   return (
     <section id={SECTION_IDS.landing} className="relative min-h-screen flex flex-col items-center pt-24">
