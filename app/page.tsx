@@ -1,5 +1,4 @@
-import { Landing } from '@/sections/landing';
-import { Welcome } from '@/sections/welcome';
+import { Landing, Welcome } from '@/sections';
 
 export default function Home() {
   return (

@@ -19,6 +19,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-display: var(--font-bebas);
 }
 
 :root {
@@ -54,20 +55,6 @@
   }
 }
 
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@theme inline {
-  --animate-slide-down: slide-down 1s ease-out both;
-}
 
 @layer base {
   * {
