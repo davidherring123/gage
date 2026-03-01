@@ -15,7 +15,7 @@ export const duration = {
 export const transition = {
   fast: { duration: duration.fast, ease: ease.out },
   normal: { duration: duration.normal, ease: ease.out },
-  slow: { duration: duration.slow, ease: ease.smooth },
+  slow: { duration: duration.slow, ease: ease.out },
   spring: { type: 'spring', stiffness: 300, damping: 30 },
 } satisfies Record<string, Transition>;
 
@@ -50,3 +50,11 @@ export const variants = {
     show: { opacity: 1, scale: 1, transition: transition.normal },
   },
 } satisfies Record<string, Variants>;
+
+export const TIMELINE = {
+  HeroImage: 0,
+  Subtitle: 1.0,
+  Header: 2.5,
+} as const;
+
+export type Timeline = typeof TIMELINE;
