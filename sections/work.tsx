@@ -1,4 +1,3 @@
-import { ImageStrip } from '@/components/ui/image-strip';
 import { SECTION_IDS } from '@/const/sections';
 
 const images = [
@@ -12,9 +11,6 @@ const images = [
 
 export function Work() {
   return (
-    <section id={SECTION_IDS.work} className="py-24 flex flex-col gap-6">
-      <ImageStrip images={images} duration={40} direction="left" />
-      <ImageStrip images={images} duration={32} direction="right" />
-    </section>
+    <section id={SECTION_IDS.work} className="py-24 flex flex-col gap-6"></section>
   );
 }

@@ -1,12 +1,8 @@
 import type { Metadata } from 'next';
-import { Inter, Bebas_Neue } from 'next/font/google';
 import { Header } from '@/components/header';
 import './globals.css';
 import { AnimationTimelineProvider } from '@/context/animation-timeline';
 import { TIMELINE } from '@/const/animations';
-
-const inter = Inter({ subsets: ['latin'] });
-const bebas = Bebas_Neue({ subsets: ['latin'], weight: '400', variable: '--font-bebas' });
 
 export const metadata: Metadata = {
   title: 'Gage Kenyon',
@@ -19,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={bebas.variable}>
-      <body className={`${inter.className} antialiased`}>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/sgc0yxw.css" />
+      </head>
+      <body className="antialiased">
         <AnimationTimelineProvider timeline={TIMELINE}>
           <Header />
           {children}
