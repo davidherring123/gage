@@ -1,4 +1,5 @@
 export const SECTION_IDS = {
-  landing: 'landing',
+  hero: 'hero',
   welcome: 'welcome',
+  work: 'work',
 } as const;

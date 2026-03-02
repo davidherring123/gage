@@ -19,10 +19,10 @@ export function Header() {
       >
         <motion.a
           variants={variants.slideDown}
-          href={`#${SECTION_IDS.landing}`}
+          href={`#${SECTION_IDS.hero}`}
           onClick={(e) => {
             e.preventDefault();
-            scrollTo(SECTION_IDS.landing);
+            scrollTo(SECTION_IDS.hero);
           }}
         >
           <span className="font-display text-2xl">GAGE KENYON</span>

@@ -1,10 +1,11 @@
-import { Landing, Welcome } from '@/sections';
+import { Hero, Welcome, Work } from '@/sections';
 
-export default function Home() {
+export default function Landing() {
   return (
     <>
-      <Landing />
+      <Hero />
       <Welcome />
+      <Work />
     </>
   );
 }
