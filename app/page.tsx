@@ -1,11 +1,12 @@
-import { Hero, Welcome, Work } from '@/sections';
+import { Hero, About, Work, Contact } from '@/sections';
 
 export default function Landing() {
   return (
     <>
       <Hero />
-      <Welcome />
+      <About />
       <Work />
+      <Contact />
     </>
   );
 }

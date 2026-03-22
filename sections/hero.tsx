@@ -20,13 +20,10 @@ export function Hero() {
         animate={{ opacity: 1 }}
         transition={{ ...transition.slow, delay: timeline.HeroImage }}
       >
-        <Image src="/headshot.png" alt="A picture of Gage" fill className="object-cover" style={{ objectPosition: 'center 50%' }} />
-        <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--background) 100%)' }}
-        />
+        <Image src="/hero.png" alt="A picture of Gage" fill className="object-cover" style={{ objectPosition: 'center 50%' }} />
+        <div className="absolute inset-0 hero-gradient" />
       </motion.div>
-      <Typewriter className="font-display text-7xl" text="GAGE KENYON" delay={1.5} />
+      <Typewriter className="heading-display" text="GAGE KENYON" delay={1.5} />
     </section>
   );
 }

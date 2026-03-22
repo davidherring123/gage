@@ -1,3 +1,4 @@
 export { Hero } from './hero';
-export { Welcome } from './welcome';
+export { About } from './about';
 export { Work } from './work';
+export { Contact } from './contact';

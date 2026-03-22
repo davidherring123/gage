@@ -9,12 +9,12 @@ const fadeUp = {
   viewport: { once: true, amount: 0.3 },
 };
 
-export function Welcome() {
+export function About() {
   return (
-    <section id={SECTION_IDS.welcome} className="min-h-screen px-12 pt-40 pb-12">
-      <div className="max-w-[50vw]">
+    <section id={SECTION_IDS.about} className="px-6 sm:px-10 md:px-12 pt-24 pb-16">
+      <div className="max-w-full md:max-w-[50vw]">
         <motion.h1
-          className="text-7xl"
+          className="heading-1"
           {...fadeUp}
           transition={{ duration: 0.6 }}
         >
